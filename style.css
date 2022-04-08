@@ -1,12 +1,17 @@
 /* Tipografia */
 @font-face { 
   font-family: "Helvetica Neue"; 
-  src: url(""), format("woff"); 
+  src: url("https://res.cloudinary.com/dy9sakdz0/raw/upload/v1649442097/HelveticaNeue-Light_pnzelo.woff"), format("woff"); 
+}
+
+@font-face { 
+  font-family: "Helvetica Neue Medium"; 
+  src: url("https://res.cloudinary.com/dy9sakdz0/raw/upload/v1649442097/HelveticaNeue-Medium_a59hy5.woff"), format("woff"); 
 }
 
 @font-face { 
   font-family: "PP Rader"; 
-  src: url(""), format("woff"); 
+  src: url("https://res.cloudinary.com/dy9sakdz0/raw/upload/v1649442058/PPRader-Regular_bev3cy.woff"), format("woff"); 
 }
 
 /* Reset */
@@ -66,6 +71,7 @@ picture {
   --white: #ffffff;
   /* 2. Tipografía */
   --font-body: 'Helvetica Neue', sans-serif;
+  --font-body: 'Helvetica Neue Medium', sans-serif;
   --font-headings: 'PP Rader', sans-serif;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
