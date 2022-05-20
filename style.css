@@ -1,12 +1,12 @@
 /* Tipografia */
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("https://res.cloudinary.com/dy9sakdz0/raw/upload/v1649442097/HelveticaNeue-Light_pnzelo.woff"), format("woff");
+  font-family: "PP Neue Montreal Book";
+  src: url("https: //res.cloudinary.com/dy9sakdz0/raw/upload/v1653075726/PPNeueMontreal-Book_ylyqep.woff"), format("woff");
 }
 
 @font-face {
-  font-family: "Helvetica Neue Medium";
-  src: url("https://res.cloudinary.com/dy9sakdz0/raw/upload/v1649442097/HelveticaNeue-Medium_a59hy5.woff"), format("woff");
+  font-family: "PP Neue Montreal Bold";
+  src: url("https: //res.cloudinary.com/dy9sakdz0/raw/upload/v1653075726/PPNeueMontreal-Bold_aldl24.woff"), format("woff");
 }
 
 @font-face {
@@ -33,54 +33,79 @@ picture {
   margin: 0;
 }
 
+.color {
+  background-color: #000000;
+}
+
 body {
   line-height: 1.5;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 120px;
-  text-align: center;
+  color: #ffffff;
+  /* font-size: 120px; */
+  --font-size-fluid-3: clamp(6rem, 14vw, 8rem);
+  font-size: var(--font-size-fluid-3);
+  text-align: left;
+  margin-left: 50px;
+}
+
+.texto1 {
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 90px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.parrafos {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
 }
 
 ul {
-  padding-inline: 0;
+  line-height: 1.2;
   gap: 42px;
-  display: flex;
   font-size: 18px;
-  justify-content: center;
+  color: #ffffff;
 
 }
 
 li {
+  --font-size-fluid-3: clamp(3rem, 4vw, 7.5rem);
+  font-size: var(--font-size-fluid-3);
   list-style: none;
-}
-
-.imagenes {
-  margin-top: 50px;
-  margin-left: 25px;
-  margin-right: 25px;
-  gap: 10px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.imagenes img {
-  grid-column: 1/2 2/3 3/4 4/5 5/6;
-  grid-row: 3/4 1/3 2/3 2/4 1/3;
-}
-
-img,
-picture {
-  max-width: 100%;
 }
 
 .boton {
   max-width: 150px;
   margin: auto;
+  margin-top: 25px;
+
+}
+
+.imagenes {
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 25px;
+  gap: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+}
+
+img {
+  width: 200px;
+  margin-right: 50px;
+}
+
+.grid {
+  display: flex;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -101,8 +126,8 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-body: 'Helvetica Neue', sans-serif;
-  --font-body: 'Helvetica Neue Medium', sans-serif;
+  --font-body: 'PP Neue Montreal Book', sans-serif;
+  --font-body: 'PP Neue Montreal Book', sans-serif;
   --font-headings: 'PP Rader', sans-serif;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
