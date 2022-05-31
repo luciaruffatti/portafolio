@@ -45,6 +45,11 @@ body {
 a {
   color: #ffffff;
   text-decoration-line: none;
+  transition: color 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+a:hover {
+  color: olive;
 }
 
 .alogo {
@@ -167,13 +172,31 @@ li {
   width: 50vw;
 }
 
-.grid {
+.reticula2 img {
+  height: 120vh;
+}
+
+.menu-home {
+  width: 100vw;
+  position: relative;
+}
+
+.menu-home a {
   display: flex;
 }
 
-.aboutmeimg {
-  width: 200px;
-  margin-right: 50px;
+.menu-home a img {
+  display: none;
+  position: absolute;
+  margin-right: 200px;
+  margin-top: 40px;
+  right: 0;
+  height: auto;
+  width: 400px;
+}
+
+.menu-home a li:hover+img {
+  display: inherit;
 }
 
 @media (prefers-reduced-motion: reduce) {
